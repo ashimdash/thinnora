@@ -6,15 +6,39 @@ import Link from 'next/link'
 import TopMenu from '@/components/TopMenu'
 
 export const metadata = {
-  title: 'Thinnora – Decision Clarity Coach',
-  description: 'Detach. Decide. Do.',
+  title: 'Thinnora – Reflect Clearly, Decide Calmly',
+  description: 'A calm, AI-guided reflection space for clarity before action. Not chat. Not advice. Just intentional stillness.',
+  keywords: ['Thinnora', 'decision clarity', 'guided reflection', 'mindful tech', 'inner wisdom', 'reflective AI'],
+  robots: 'index, follow',
   icons: {
     icon: [
       { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
       { url: '/icon-512.png', sizes: '512x512', type: 'image/png' }
     ]
+  },
+  openGraph: {
+    title: 'Thinnora – Reflect Clearly, Decide Calmly',
+    description: 'A guided space for slowing down and returning to your own wisdom. Try it free.',
+    url: 'https://www.thinnora.space',
+    siteName: 'Thinnora',
+    images: [
+      {
+        url: 'https://www.thinnora.space/og-preview.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Thinnora interface over a soft sky gradient'
+      }
+    ],
+    type: 'website'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Thinnora – Reflect Clearly',
+    description: 'A calm, AI-guided space for intentional reflection.',
+    images: ['https://www.thinnora.space/og-preview.jpg']
   }
 }
+
 
 function FloatingHeader() {
   return (
