@@ -1,6 +1,6 @@
 import { getMaxListeners } from "events"
 
-const HARDCODED_WHITELIST = ['dash.ashim@gmail.com', 'panigrahisangeeta4@gmail.com', 'sunitapanigrahi66@gmail.com', 'drayushidash@gmail.com']
+const HARDCODED_WHITELIST = ['dash.ashim@gmail.com', 'panigrahisangeeta4@gmail.com', 'sunitapanigrahi66@gmail.com', 'drayushidash@gmail.com', 'aninditapanigrahi909@gmail.com']
 
 export function canReflectToday(email: string | null): boolean {
   console.log('Checking limit for:', email)
