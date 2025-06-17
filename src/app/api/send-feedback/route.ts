@@ -10,7 +10,7 @@ export async function POST(req: Request) {
   try {
     await resend.emails.send({
       from: 'admin@thinnora.space',
-      to: 'dash.ashim@gmail.com', // ← Change to your receiving inbox
+      to: ['dash.ashim@gmail.com','sunitapanigrahi66@gmail.com'], // ← Change to your receiving inbox
       subject: '📝 New Feedback from Thinnora',
       text: `
 New feedback received:
