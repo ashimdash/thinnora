@@ -27,20 +27,37 @@ export default function InstallPrompt() {
       deferredPrompt.userChoice.then((choiceResult: any) => {
         if (choiceResult.outcome === 'accepted') {
           localStorage.setItem('thinnora_installed', 'yes')
-          setShowPrompt(false)
         }
+        setShowPrompt(false)
       })
     }
+  }
+
+  const dismissPrompt = () => {
+    setShowPrompt(false)
+    // Optional: delay the next prompt attempt
+    localStorage.setItem('thinnora_prompt_dismissed', Date.now().toString())
   }
 
   if (!showPrompt) return null
 
   return (
-    <div className="fixed bottom-4 right-4 bg-white text-black p-4 rounded-xl shadow-md z-50">
-      <p>Install Thinnora for a better experience?</p>
-      <button onClick={installApp} className="mt-2 px-3 py-1 bg-black text-white rounded">
-        Install App
-      </button>
+    <div className="fixed bottom-4 right-4 bg-white text-black p-4 rounded-xl shadow-md z-50 max-w-xs">
+      <p className="font-medium">Install Thinnora for a better experience?</p>
+      <div className="flex justify-end gap-2 mt-3">
+        <button
+          onClick={dismissPrompt}
+          className="px-3 py-1 text-sm text-black border border-gray-400 rounded hover:bg-gray-100"
+        >
+          Maybe Later
+        </button>
+        <button
+          onClick={installApp}
+          className="px-3 py-1 text-sm bg-black text-white rounded hover:bg-gray-900"
+        >
+          Install App
+        </button>
+      </div>
     </div>
   )
 }
