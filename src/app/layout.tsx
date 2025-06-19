@@ -4,6 +4,7 @@ import { dark } from '@clerk/themes'
 import { ReactNode } from 'react'
 import Link from 'next/link'
 import TopMenu from '@/components/TopMenu'
+import InstallPrompt from '@/components/InstallPrompt'
 
 export const metadata = {
   title: 'Thinnora – Reflect Clearly, Decide Calmly',
@@ -71,6 +72,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <body className="min-h-screen bg-fixed bg-cover bg-center text-white font-sans perkspotbx">
           <FloatingHeader />
           <TopMenu />
+          <InstallPrompt />
           <main className="px-4 md:px-8 max-w-3xl mx-auto pt-40">
             {children}
           </main>
