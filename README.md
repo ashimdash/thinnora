@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Thinnora 🌿
 
-## Getting Started
+**Thinnora** is a mindful reflection platform that helps people reclaim time from digital distractions and reconnect with what matters.  
+It offers calm, intentional prompts — not chat, not productivity hacks — to guide users into a quieter, more conscious relationship with time, attention, and energy.
 
-First, run the development server:
+🌐 **Live site:** [https://www.thinnora.space](https://thinnora.space)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ What Makes Thinnora Different?
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 🧘‍♀️ **Mindful by design** — No dopamine loops, no endless scroll. Just daily check-ins to help you pause and reflect.
+- 🕰️ **Reclaim your time** — Thinnora supports intentional time use through daily prompts, reflection logs, and conscious patterns.
+- 🔒 **Private and lightweight** — Free tier uses local storage. No signup required. Pro users get cloud sync and extra features.
+- 🧠 **Not productivity. Not therapy. Just presence.** — We’re not here to optimize you. We’re here to help you meet yourself, gently.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 💡 Key Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Daily Reflection Prompts**
+- **Reflection Streak Tracking**
+- **Soft Limits for Daily Use** (2/day for free users)
+- **Email Feedback Support**
+- **Open Graph and SEO Meta Support**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
+## 🙌 Built by
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[@ashimdash](https://github.com/ashimdash) – Founder & Designer  
+Inspired by the desire to help people slow down and reconnect with what really matters.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> *“Not chat. Not productivity. Just calm, intentional reflection.”*
