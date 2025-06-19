@@ -22,9 +22,9 @@ export default function ReflectionPage() {
   if (!inputs) return null
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-10 text-white space-y-10">
+    <div className="max-w-3xl mx-auto px-4 py-10 text-sky-900 space-y-10">
       <h1 className="text-3xl font-bold text-center mb-6 drop-shadow">🪞 Your Guided Reflection</h1>
-      <div className="bg-white/10 p-6 rounded-2xl space-y-2">
+      <div className="bg-white/10 p-6 rounded-2xl space-y-2 text-sky-900">
         <p><strong>Guide:</strong> {inputs.guide}</p>
         <p><strong>Decision:</strong> {inputs.decision}</p>
         <p><strong>Options:</strong> {inputs.options}</p>
@@ -32,7 +32,7 @@ export default function ReflectionPage() {
         <p><strong>Values:</strong> {inputs.values}</p>
         <p><strong>Extra:</strong> {inputs.extra}</p>
         <hr />
-        <p className="text-blue-100 whitespace-pre-wrap">
+        <p className="text-sky-900 whitespace-pre-wrap">
           {reflection || 'No reflection was generated.'}
         </p>
       </div>

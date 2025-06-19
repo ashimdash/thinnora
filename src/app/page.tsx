@@ -53,7 +53,7 @@ export default function HomePage() {
             } bg-white/5 backdrop-blur-sm border border-white/0`}
             style={{ boxShadow: 'inset 0 0 0.5px rgba(255,255,255,0.2)' }}
           >
-            <h1 className="text-xl font-semibold text-center text-sky-100 drop-shadow-sm">
+            <h1 className="text-xl font-semibold text-center text-sky-900 drop-shadow-sm">
               Choose your guide
             </h1>
 
@@ -74,7 +74,7 @@ export default function HomePage() {
                   />
                   <span className="text-cyan-200 font-medium drop-shadow">🧘 Gia</span>
                 </div>
-                <p className="text-white/70 text-xs pl-6 italic">
+                <p className="text-black/70 text-xs pl-6 italic">
                   Emotionally attuned, intuitive, gentle reflection.
                 </p>
               </label>
@@ -95,7 +95,7 @@ export default function HomePage() {
                   />
                   <span className="text-indigo-600 font-medium drop-shadow">🧠 Vian</span>
                 </div>
-                <p className="text-white/70 text-xs pl-6 italic">
+                <p className="text-black/70 text-xs pl-6 italic">
                   Logical, calm, clarity-focused decision support.
                 </p>
               </label>

@@ -97,7 +97,7 @@ export default function ReflectPage() {
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
-      <div className="text-center text-sm italic text-gray-200 mb-6">
+      <div className="text-center text-sm italic text-sky-900 mb-6">
         Reflecting with {guide === 'Gia' ? 'Gia – Gentle & thoughtful 🌿' : 'Vian – Bold & analytical 🔥'}
       </div>
 
@@ -109,13 +109,13 @@ export default function ReflectPage() {
           { id: 'values', label: '💡 What do you value most?', value: values, setter: setValues },
         ].map(({ id, label, value, setter }) => (
           <div key={id}>
-            <label htmlFor={id} className="block font-semibold mb-2 text-gray-200">{label}</label>
+            <label htmlFor={id} className="block font-semibold mb-2 text-sky-900">{label}</label>
             <textarea
               id={id}
               value={value}
               onChange={(e) => setter(e.target.value)}
               maxLength={300}
-              className="w-full p-3 border border-gray-500 bg-transparent text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-300 resize-none"
+              className="w-full p-3 border border-gray-500 bg-transparent text-sky-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-300 resize-none"
               rows={1}
             />
             <p className="text-sm text-gray-400 text-right">{value.length}/300</p>
@@ -123,13 +123,13 @@ export default function ReflectPage() {
         ))}
 
         <div className="md:col-span-2">
-          <label htmlFor="extra" className="block font-semibold mb-2 text-gray-200">🗒️ Extra thoughts (optional)</label>
+          <label htmlFor="extra" className="block font-semibold mb-2 text-sky-900">🗒️ Extra thoughts (optional)</label>
           <textarea
             id="extra"
             value={extra}
             onChange={(e) => setExtra(e.target.value)}
             maxLength={300}
-            className="w-full p-3 border border-gray-500 bg-transparent text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-300 resize-none"
+            className="w-full p-3 border border-gray-500 bg-transparent text-sky-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-300 resize-none"
             rows={1}
           />
           <p className="text-sm text-gray-400 text-right">{extra.length}/300</p>
